@@ -1,0 +1,19 @@
+:root {
+  /* COLOR */
+  /* PRIMARY */
+  --clr-primary: 215 51% 70%;
+  --clr-accent: 178 100% 50%;
+  /* NEUTRAL */
+  --clr-bg: 217 54% 11%;
+  --clr-card-bg: 216 50% 16%;
+  --clr-line: 215 32% 27%;
+  --clr-white: 0 0% 100%;
+
+  /* FONT FAMILY */
+  --ff-outfit: "Outfit", sans-serif;
+
+  /* FONT WEIGHT */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+}
