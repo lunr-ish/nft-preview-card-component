@@ -34,6 +34,11 @@ body {
   background: hsl(var(--clr-bg));
   color: hsl(var(--clr-primary));
   font-family: var(--ff-outfit);
+  font-weight: var(--fw-regular);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 p,
@@ -51,4 +56,117 @@ a {
 img {
   display: block;
   max-width: 100%;
+}
+
+hr {
+  height: 1px;
+  background: hsl(var(--clr-line));
+  border: none;
+  margin-block: 1rem;
+}
+
+/* UTILITIES */
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* CARD */
+
+.card {
+  max-width: 21.875rem;
+  padding: 1.5rem 1.5rem 2rem;
+  border-radius: 1rem;
+  background: hsl(var(--clr-card-bg));
+}
+
+/* CARD HEADER */
+
+.card__header .img-wrapper {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* CARD BODY */
+
+.card__body {
+  margin-top: 1.5rem;
+}
+
+.card__title {
+  font-weight: var(--fw-semi-bold);
+  font-size: 1.375rem;
+  color: hsl(var(--clr-white));
+}
+
+.card__description {
+  font-weight: var(--fw-light);
+  line-height: 1.45;
+  margin-block: 0.75rem 0.9375rem;
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__pricing,
+.card__deadline {
+  display: flex;
+  align-items: center;
+  gap: 0.4375rem;
+}
+
+.card__pricing {
+  font-weight: var(--fw-semi-bold);
+  color: hsl(var(--clr-accent));
+}
+
+.card__credit {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9375rem;
+}
+
+.avatar {
+  width: 2.125rem;
+  height: 2.125rem;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 1px solid hsl(var(--clr-white));
+}
+
+.card__creator-name {
+  color: hsl(var(--clr-white));
+}
+
+/* CARD FOOTER */
+
+@media (min-width: 40rem) {
+  hr {
+    margin-top: 1.5rem;
+  }
+
+  .card__description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-block: 1rem 1.5rem;
+  }
+
+  .card__pricing,
+  .card__deadline {
+    gap: 0.375rem;
+  }
+
+  .card__credit {
+    font-size: 1rem;
+  }
 }
