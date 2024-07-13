@@ -103,6 +103,11 @@ hr {
   font-weight: var(--fw-semi-bold);
   font-size: 1.375rem;
   color: hsl(var(--clr-white));
+  transition: 200ms;
+}
+
+.card__title a:is(:hover, :focus-visible) {
+  color: hsl(var(--clr-accent));
 }
 
 .card__description {
@@ -146,6 +151,10 @@ hr {
 
 .card__creator-name {
   color: hsl(var(--clr-white));
+}
+
+.card__creator-name:is(:hover, :focus-visible) {
+  color: hsl(var(--clr-accent));
 }
 
 /* CARD FOOTER */
