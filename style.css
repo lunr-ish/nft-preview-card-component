@@ -17,3 +17,32 @@
   --fw-regular: 400;
   --fw-semi-bold: 600;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: hsl(var(--clr-bg));
+  color: hsl(var(--clr-primary));
+  font-family: var(--ff-outfit);
+}
+
+p,
+h1,
+h2 {
+  overflow-wrap: break-word;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
